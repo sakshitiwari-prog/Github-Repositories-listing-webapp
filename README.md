@@ -7,7 +7,7 @@ To get started with this project, follow these steps:
 1. Fork this repository
 
 2. Clone this repository to your local machine:
-git clone https://github.com/your-username/BreadcrumbsGithub-Repositories-listing-webapp.git
+git clone https://github.com/sakshitiwari-prog/Github-Repositories-listing-webapp.git
 
 3. Install the required dependencies for both the backend and frontend:
 cd GitHub-Repositories-listing-web app
