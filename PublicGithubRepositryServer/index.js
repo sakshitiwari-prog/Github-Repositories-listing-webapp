@@ -29,7 +29,7 @@ const server = http.createServer((req, res) => {
                         res.end(JSON.stringify({ message: 'Data', requestData: data }));
 
                     } else {
-                        res.end(JSON.stringify({ message: 'Data not found' }));
+                        res.end(JSON.stringify({ message: 'Data not found or API limit exceeded' }));
 
                     }
                 });
