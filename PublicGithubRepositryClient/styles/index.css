@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-size: .625rem;
+}
+.modal .loader-overlay{
+overflow: hidden;
+position: absolute;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background-color: rgb(0,0,0,0.2);
+display: none;
+}
+.outer-circle{
+   
+    border-radius: 50%;
+    border: 1px solid grey;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.outer-circle .inner-circle{
+    position: relative;
+    width: 13rem;
+    height: 13rem;
+    background-color:  grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer-circle .inner-circle input[type="file"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}

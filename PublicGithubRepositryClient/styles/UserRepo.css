@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-size: .625rem;
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+}
+.header .outer-circle{
+    margin: 0.1rem 1rem;
+
+    border-radius: 50%;
+    border: 1px solid rgb(238, 238, 238);
+    width: 9.5rem;
+    height: 9.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header .outer-circle .inner-circle{
+    position: relative;
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+    background-color:  rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.header .outer-circle .inner-circle input[type="file"]{
+    position: absolute;
+    height: 9rem;
+    width: 9rem;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.outer-circle .inner-circle .user-img-label{
+    margin-bottom: 0;
+    color: rgb(197, 197, 197);
+    font-size: 0.7rem;
+    font-weight:500;
+}
+.header .username{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.twitter,.header .bio,.location{
+    margin-bottom: 0.5rem;
+}
+
+.header .m-3{    display: flex;
+    justify-content: end;
+    justify-content: col;
+    flex-direction: column;}
+.header .bio, .location,.active, .twitter,.git-link-container .git-link,.modal .repo-container .repo-list .modal-dialog .modal-content .repo-bio{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.header .location-img{
+    margin-right: 0.6rem;
+}
+ .git-link-container{
+    margin: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.git-link-container .git-link-img{
+    width: 1.3rem;
+    height: 0.6rem;
+    margin-right: 0.6rem;
+}
+.modal .repo-container .repo-list{
+    margin: 0;
+    padding: 0.5rem 0rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.modal .repo-container .repo-list .modal-dialog{
+    width: 46%;
+    max-width: 46%;
+    margin: 0;
+}
+.modal .repo-container .repo-list .modal-dialog .modal-content{
+    height: 9rem;
+    margin: 1rem 0rem ;
+    padding: 1rem;
+    border: 1.5px solid black;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.modal .repo-container .repo-list .modal-dialog .modal-content p{
+    margin-bottom: 0.5rem;
+}
+.modal .repo-container .repo-list .modal-dialog .modal-content .repo-heading{
+    margin-bottom: 0rem;
+    font-size: 1.4rem;
+    color: #629fD6;
+    font-weight: 500;
+}
+
+
+.modal .repo-container .repo-list .modal-dialog .modal-content .repo-lang-container{
+    margin-right: 0.5rem;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #428BCA;
+    border-radius: 0.2rem;
+    max-width: 8rem;
+}
+.modal .repo-container .repo-list .modal-dialog .modal-content  .repo-lang-container .repo-lang{
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.header .outer-circle .inner-circle .user-img{
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+    width: 10rem;
+    height: 10rem;
+}
+.modal .loader-overlay{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.2);
+    display: none;
+    }
+.modal .repo-container .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal .repo-container .footer .repo-page-count-container{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.repo-num-container .control-btn{
+    font-weight: 900;
+    font-size: 0.5rem;
+    padding: 0.3rem;
+}
+.repo-num-container{
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(221,221,221);
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    color: #428BCA;
+    background-color: rgba(0,0,0,0);
+    height: 100%; 
+}
+
+.repo-numbers{
+    display: flex;
+}
+.hidden{
+    display: none;
+}
+.active{
+color: white;
+
+background-color: #428BCA;
+}
+.disabled{
+    background-color: rgb(198, 198, 198);
+}
+
+.modal .repo-container .error-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(230 229 229);
+    padding: 8rem;
+    flex: 1;
+    font-size: xx-large;
+    font-weight: 500;
+}
+.modal .repo-container .error-container>p{
+    margin: 0;
+}
