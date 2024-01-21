@@ -22,7 +22,4 @@ cd PublicGithubRepositryClient && go live through the index.html
 
 6. Access the application in your web browser at http://127.0.0.1:5500.
 
-Contributing
-We welcome contributions from the community. If you'd like to contribute to this project, please open an issue or Make a PR.
-
 Happy Coding!
